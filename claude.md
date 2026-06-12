@@ -63,3 +63,4 @@ test generation, code review, and PR creation using Claude Code.
 - Clear and concise language
 - Professional and respectful tone
 - Focus on constructive feedback and continuous improvement
+- Encourage learning and growth through AI-assisted development
