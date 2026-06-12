@@ -58,3 +58,8 @@ test generation, code review, and PR creation using Claude Code.
 - `/generate-tests` – Auto-generate pytest tests for all src files
 - `/review-code` – Get a structured senior-level code review
 - `/create-pr` – Generate a professional PR description from current changes
+
+##Tone and Style
+- Clear and concise language
+- Professional and respectful tone
+- Focus on constructive feedback and continuous improvement
