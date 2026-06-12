@@ -1,0 +1,25 @@
+id	summary	status	story_points	assignee	epic	carry_over
+NB-401	Payment export â€” PDF format	Done	3	j.smith	Reporting	FALSE
+NB-402	Multi-site project dashboard	Done	5	r.patel	Dashboard	FALSE
+NB-403	API rate limiting for partner integrations	In Progress	3	j.smith	Platform	TRUE
+NB-404	Gantt chart export bug fix	Done	2	a.kim	Reporting	FALSE
+NB-405	Subcontractor portal â€” phase 1	Blocked	8	r.patel	Subcontractors	TRUE
+NB-406	Invoice rounding bug (prod incident)	Done	1	a.kim	Billing	FALSE
+NB-407	Role-based permissions v2	Descoped	5		Permissions	FALSE
+NB-408	Notification centre	Descoped	8		Notifications	FALSE
+NB-409	Bulk document export	Descoped	3		Reporting	FALSE
+NB-410	Project timeline filters	Done	3	j.smith	Dashboard	FALSE
+NB-411	Custom field validation	Done	2	a.kim	Forms	TRUE
+NB-412	Mobile nav improvements	Done	2	r.patel	Mobile	FALSE
+NB-413	Contractor timesheet view	Done	3	j.smith	Timesheets	FALSE
+NB-414	Resource allocation grid	In Progress	5	r.patel	Resources	FALSE
+NB-415	Cost forecast chart	Done	3	a.kim	Reporting	FALSE
+NB-416	Search indexing performance	Done	2	j.smith	Platform	FALSE
+NB-417	Email notification templates	Done	3	a.kim	Notifications	FALSE
+NB-418	CSV import â€” project tasks	Done	3	r.patel	Import	TRUE
+NB-419	Two-factor auth setup	Done	5	j.smith	Security	FALSE
+NB-420	Project archive feature	Done	2	a.kim	Projects	FALSE
+NB-421	Budget variance alerts	Done	3	r.patel	Reporting	FALSE
+NB-422	Print-friendly project summary	Done	1	j.smith	Reporting	FALSE
+NB-423	External stakeholder view (read-only)	In Progress	5	a.kim	Permissions	TRUE
+NB-424	Dashboard widget customisation	Done	3	r.patel	Dashboard	FALSE

@@ -1,0 +1,71 @@
+Sprint 42 — BA Notes (raw)
+Period: 2024-01-02 to 2024-01-16
+Team: j.smith, r.patel, a.kim
+
+================================================================================
+DELIVERY SUMMARY
+================================================================================
+
+18 of 24 stories completed (75%). Story points delivered: 32.
+3-sprint velocity average: 30 pts. This sprint slightly above average.
+
+3 stories descoped (NB-407, NB-408, NB-409) — not due to capacity.
+Reason: Release date shifted by 2 weeks (decision made Jan 10, leadership
+call). Product decided to deprioritise permissions v2 and notifications to
+avoid risk before the new release window. These carry into Sprint 43.
+
+3 stories still in progress at sprint close (NB-403, NB-414, NB-423).
+All 3 are carry-overs. NB-414 and NB-423 expected to complete in first
+3 days of Sprint 43.
+
+================================================================================
+INCIDENTS / BUGS
+================================================================================
+
+NB-406 — Invoice rounding bug (PROD INCIDENT)
+- Discovered Jan 11, 4:12pm. Payment totals were rounding incorrectly on
+  invoices over $10,000 due to floating point precision error.
+- Impact: 47 invoices affected (display only — no incorrect charges).
+  Invoices showed wrong total by $0.01 in some cases.
+- Fixed same day by a.kim, deployed Jan 11, 7:30pm.
+- Root cause: BigDecimal vs double in InvoiceFormatter.java (line 203).
+- No customer complaints received. Finance team notified proactively.
+- Classed as low severity. Post-mortem not required per team agreement.
+
+================================================================================
+BLOCKERS
+================================================================================
+
+NB-405 — Subcontractor Portal (Blocked)
+- Blocked since Sprint 40 (3 sprints running).
+- Dependency: ContractorLink API (third-party). Their team committed to
+  delivering auth endpoint documentation by Dec 22. Not received.
+- r.patel chased Jan 5 and Jan 12. No response beyond "still in review".
+- Risk: If not resolved by Sprint 43 start, this story misses the Q1 release.
+- Action needed: Escalation to vendor account manager. PM to initiate.
+
+NB-403 — API Rate Limiting
+- Not blocked, just complex. j.smith underestimated: 3 pts should be 5.
+- Expected completion: Jan 18 (day 2 of Sprint 43).
+
+================================================================================
+NEXT SPRINT PREVIEW (Sprint 43)
+================================================================================
+
+Carry-overs: NB-403, NB-414, NB-423, NB-405 (if unblocked)
+Planned new: Role permissions v2 (NB-407, reprioritised), Notification centre
+(NB-408), Bulk export (NB-409), plus 3 new stories from backlog (TBD).
+
+Sprint 43 capacity: j.smith (10 days), r.patel (8 days — 2 days leave),
+a.kim (10 days). Slightly reduced capacity. Target: 28 pts.
+
+================================================================================
+NOTES FOR STAKEHOLDER REPORT
+================================================================================
+
+- Lead with the release date shift context when explaining descoped items —
+  don't let it look like a capacity problem.
+- Frame NB-406 as "caught and fixed same day, no customer impact" — don't
+  bury it, proactive disclosure builds trust.
+- Flag NB-405 vendor escalation as an action item requiring leadership input.
+- Velocity is healthy — 32 pts vs 30 avg is a positive signal worth noting.
